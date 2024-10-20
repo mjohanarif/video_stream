@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video_stream/home_page.dart';
+import 'package:video_stream/module/video/video.dart';
 
 class AppRoutes {
   static const String main = '/';
@@ -7,12 +7,12 @@ class AppRoutes {
     switch (settings.name) {
       case main:
         return _materialRoute(
-          const HomePage(),
+          const VideoListPage(),
         );
 
       default:
         return _materialRoute(
-          const HomePage(),
+          const VideoListPage(),
         );
     }
   }
